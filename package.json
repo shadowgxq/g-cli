@@ -1,0 +1,32 @@
+{
+  "name": "gclis",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "bin",
+    "libs"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf libs && tsc",
+    "dev": "tsc -w"
+  },
+  "bin": {
+    "gt": "./bin/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/commander": "^2.12.5",
+    "commander": "^12.1.0"
+  }
+}
