@@ -1,17 +1,17 @@
 {
   "name": "gclis",
-  "version": "1.0.0",
+  "version": "1.0.1-beat.2",
   "description": "",
   "private": false,
   "main": "index.js",
   "type": "module",
   "files": [
     "bin",
-    "libs"
+    "lib"
   ],
   "scripts": {
     "prepublish": "npm run build",
-    "build": "rm -rf libs && tsc",
+    "build": "rm -rf lib && tsc",
     "dev": "tsc -w"
   },
   "bin": {

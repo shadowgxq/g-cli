@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-import '../libs/index.js'
+import '../lib/index.js'
